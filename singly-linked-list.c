@@ -21,7 +21,7 @@ typedef struct Head {
 }headNode; // 연결 리스트의 헤드 노드 구조체 정의
 
 
-/* 함수 리스트 */
+// 함수 리스트 
 headNode* initialize(headNode* h); // 헤드 노드를 초기화하는 함수
 int freeList(headNode* h); // 리스트의 모든 노드를 해제하는 함수
 
@@ -39,6 +39,9 @@ void printList(headNode* h); // 현재 linked list의 상태를 출력하는 함
 // main 함수 시작
 int main()
 {
+	
+	printf("[----- [김예진]  [2022041035] -----]\n");
+	
     char command; // 입력받은 명령어를 저장하는 변수
     int key; // 입력받은 키 값을 저장하는 변수
     headNode* headnode=NULL; // linked list를 가리키는 head node를 NULL값으로 초기화
@@ -103,7 +106,7 @@ int main()
 
     }while(command != 'q' && command != 'Q'); // 'q' 또는 'Q'를 입력할 때까지 반복
 
-    return 1; // 프로그램 종료
+    return 1; // 프로그램을 종료 한다
 }
 
 
